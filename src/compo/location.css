@@ -1,0 +1,17 @@
+.loc {
+  flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-color: #ff6060;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  flex-basis: 30%;
+  min-width: 340px;
+  min-height: 340px;
+  align-items: end;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.loc__txt {
+  max-width: 100px;
+}/*# sourceMappingURL=location.css.map */

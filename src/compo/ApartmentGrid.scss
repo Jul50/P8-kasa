@@ -1,0 +1,17 @@
+.apartment {
+  border-radius: 25px;
+  background-color: blue; /* mettre en #f6f6f6 */
+  margin-top: 43px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  min-height: 50vh;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 56px;
+  padding-bottom: 43px;
+  padding-right: 50px;
+  padding-left: 50px;
+  justify-content: space-evenly;
+}

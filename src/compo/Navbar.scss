@@ -9,7 +9,8 @@
   margin-bottom: 0;
   margin-left: 100px;
   margin-right: 100px;
+
+  &__logo {
+    margin-right: auto; /* reste tjrs a gauche en prenant un max de place */
+  }
 }
-.navbar__logo {
-  margin-right: auto; /* reste tjrs a gauche en prenant un max de place */
-}/*# sourceMappingURL=Navbar.css.map */
