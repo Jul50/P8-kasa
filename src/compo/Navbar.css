@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   display: flex;
   align-items: center;
@@ -11,5 +12,12 @@
   margin-right: 100px;
 }
 .navbar__logo {
-  margin-right: auto; /* reste tjrs a gauche en prenant un max de place */
+  margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
+}
+.navbar__txt a {
+  text-decoration: none;
+  color: #ff6060;
+}
+.navbar__txt a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=Navbar.css.map */

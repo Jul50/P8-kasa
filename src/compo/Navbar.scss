@@ -11,6 +11,17 @@
   margin-right: 100px;
 
   &__logo {
-    margin-right: auto; /* reste tjrs a gauche en prenant un max de place */
+    margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
+  }
+
+  &__txt {
+    a {
+      text-decoration: none;
+      color: #ff6060;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
