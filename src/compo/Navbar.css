@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  color: #ff6060;
   font-size: 24px;
   gap: 57px;
   margin-top: 45px;
@@ -11,13 +10,20 @@
   margin-left: 100px;
   margin-right: 100px;
 }
-.navbar__logo {
-  margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
-}
-.navbar__txt a {
+.navbar a {
   text-decoration: none;
   color: #ff6060;
 }
-.navbar__txt a:hover {
+.navbar a:hover {
   text-decoration: underline;
+}
+.navbar a span {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.navbar a:hover span {
+  border-color: #ff6060;
+}
+.navbar__logo {
+  margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
 }/*# sourceMappingURL=Navbar.css.map */

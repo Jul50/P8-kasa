@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  color: #ff6060;
   font-size: 24px;
   gap: 57px;
   margin-top: 45px;
@@ -10,18 +9,25 @@
   margin-left: 100px;
   margin-right: 100px;
 
-  &__logo {
-    margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
+  a {
+    text-decoration: none;
+    color: #ff6060;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    span {
+      display: inline-block;
+      border-bottom: 2px solid transparent;
+    }
+
+    &:hover span {
+      border-color: #ff6060;
+    }
   }
 
-  &__txt {
-    a {
-      text-decoration: none;
-      color: #ff6060;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+  &__logo {
+    margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
   }
 }

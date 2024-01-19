@@ -9,10 +9,10 @@ function Navbar() {
         <img src="LOGO.jpg" alt="logo Kasa" />
       </div>
       <NavLink to="/">
-        <div className="navbar__txt">Acceuil</div>
+        <span>Acceuil</span>
       </NavLink>
       <NavLink to="/a_propos">
-        <div className="navbar__txt">A propos</div>
+        <span>A propos</span>
       </NavLink>
     </nav>
   );
