@@ -5,13 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Apropos from "./A_propos";
+import Error from "./Error";
 
 /* router */
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <h1>404</h1>,
+    errorElement: <Error />,
   },
   { path: "/Logement", element: <div>Logement</div> },
   {
