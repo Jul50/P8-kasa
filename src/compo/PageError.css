@@ -1,4 +1,4 @@
-h2 {
+.pageerreur__title {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -10,11 +10,11 @@ h2 {
   font-size: 288px;
   font-style: normal;
   font-weight: 700;
-  margin: 138px;
-  box-sizing: border-box;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  box-sizing: content-box;
 }
-
-p {
+.pageerreur__txt {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -26,8 +26,7 @@ p {
   font-weight: 500;
   line-height: 142.6%;
 }
-
-.PageError a {
+.pageerreur__back {
   display: flex;
   align-items: center;
   margin-top: 139px;
@@ -40,4 +39,4 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: 142%;
-} /*# sourceMappingURL=PageError.css.map */
+}/*# sourceMappingURL=PageError.css.map */

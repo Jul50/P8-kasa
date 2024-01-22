@@ -3,9 +3,14 @@ import "./PageError.css";
 
 function PageError() {
   return (
-    <div>
-      <h2>404</h2>;<p>Oups! La page que vous demandez n'existe pas</p>
-      <a href="/">Retourner sur la page d'accuei</a>
+    <div className="pageerreur">
+      <h2 className="pageerreur__title">404</h2>
+      <p className="pageerreur__txt" Pageerreur__>
+        Oups! La page que vous demandez n'existe pas
+      </p>
+      <a className="pageerreur__back" href="/">
+        Retourner sur la page d'accuei
+      </a>
     </div>
   );
 }
