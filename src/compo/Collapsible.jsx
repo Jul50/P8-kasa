@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Collapsible.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Collapsible(props) {
   const { sections } = props;
@@ -20,7 +20,9 @@ function Collapsible(props) {
             onClick={() => handleCollapsibleClick(index)}
           >
             {section.title}
-            <FontAwesomeIcon icon={faChevronDown} />
+            <FontAwesomeIcon
+              icon={openSection === index ? faChevronUp : faChevronDown}
+            />
           </button>
           <div className={`content ${openSection === index ? "open" : ""}`}>
             <p>{section.content}</p>
