@@ -19,6 +19,8 @@
   height: auto;
   position: relative;
   top: -222px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 h1 {

@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Apropos from "./A_propos";
 import Error from "./Error";
+import Appt from "./Appt";
 
 /* router */
 const router = createBrowserRouter([
@@ -20,6 +21,14 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Apropos />
+      </div>
+    ),
+  },
+  {
+    path: "Appt_page",
+    element: (
+      <div>
+        <Appt />
       </div>
     ),
   },
