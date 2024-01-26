@@ -92,3 +92,10 @@
     }
   }
 }
+.Apartment__collapsible .Collapsible__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 100px;
+  margin-left: 100px;
+}

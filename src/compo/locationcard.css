@@ -10,8 +10,20 @@
   min-height: 340px;
   align-items: end;
   box-sizing: border-box;
-  padding: 20px;
 }
 .loc__txt {
   max-width: 100px;
-}/*# sourceMappingURL=location.css.map */
+  position: absolute;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.loc img {
+  width: 340px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  filter: brightness(70%);
+}/*# sourceMappingURL=locationcard.css.map */

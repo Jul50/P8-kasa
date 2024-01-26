@@ -53,7 +53,7 @@ function Apartmentpage() {
           />
         </div>
       </div>
-      <div className="Apartment__collapsible">
+      <div className="Apartment__c ollapsible">
         <div className="Apartment__descriptionequipements">
           <Collapsible sections={descriptionequipements} />
         </div>
