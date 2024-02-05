@@ -1,19 +1,22 @@
 import React from "react";
-import Navcompo from "./compo/navbar.jsx";
 import "./App.css";
-import Banner from "./compo/Banner.jsx";
-import ApartmentGrid from "./compo/ApartmentGrid.jsx";
-import Footer from "./compo/Footer.jsx";
+import RouterKasa from "./RouterKasa.js";
 
 function App() {
   return (
     <div>
-      <Navcompo />
-      <Banner />
-      <ApartmentGrid />
-      <Footer />
+      <RouterKasa />
     </div>
   );
 }
 
 export default App;
+
+/* <Navcompo />
+      <Banner />
+      <ApartmentGrid />
+      <Footer />
+import Banner from "./compo/Banner.jsx";
+import ApartmentGrid from "./compo/ApartmentGrid.jsx";
+import Footer from "./compo/Footer.jsx";
+import Navcompo from "./compo/navbar.jsx"; */

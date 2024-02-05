@@ -1,22 +1,19 @@
-import React, { useEffect, useState } from "react";
-import "./ApartmentGrid.css";
-import Locationcard from "./locationcard.jsx";
+import React from "react";
+import Locationcard from "./locationcard";
+import logements from "../data/data.json";
+import "../styles/ApartmentGrid.css";
 
 function ApartmentGrid() {
-  const [dbloc, setapt] = useState([]);
-  useEffect(fetchApt, []);
-
-  function fetchApt() {
-    fetch("logement.json")
-      .then((loc) => loc.json())
-      .then((loc) => setapt(loc))
-      .catch(console.error);
-  }
-  // affichage array location //{
   return (
-    <div className="apartment">
-      {dbloc.map((dbloc) => (
-        <Locationcard title={dbloc.title} imgcover={dbloc.cover} />
+    <div className="home_gallery">
+      {logements.map((logement) => (
+        <article key={logement.id}>
+          <Locationcard
+            id={logement.id}
+            imgcover={logement.cover}
+            title={logement.title}
+          />
+        </article>
       ))}
     </div>
   );

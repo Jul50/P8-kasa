@@ -1,64 +1,59 @@
 import React from "react";
-import "./Apartmentpage.css";
-import Collapsible from "./Collapsible.jsx";
+import "../styles/Apartmentpage.css";
+import Error from "../Error";
+import Slider from "../compo/slider";
+import Collapsible from "./Collapsible";
+import Rating from "../compo/Rating";
+import Data from "../data/data.json";
 
-function Apartmentpage() {
-  const descriptionequipements = [
-    {
-      title: "Description",
-      content: "ddddddddddddddddd",
-    },
-    {
-      title: "Equipement",
-      content: "eeeeeeeeeeeeeeeeeee",
-    },
-  ];
+function Apartmentpage({ id }) {
+  const logement = Data.find((location) => location.id === id);
+
+  if (!logement) {
+    return <Error />;
+  }
 
   return (
-    <div className="Apartment">
-      <div className="Apartment__img">
-        <img src="banner.png" alt="" />
-      </div>
-      <div className="Apartment__flexbox">
-        <div>
-          <h4 className="Apartment__title">
-            Cozy loft on the Canal Saint-Martin
-          </h4>
-          <h2 className="Apartment__subtitle">Paris, Ile de France</h2>
-          <div className="Apartment__tags">
-            <span> Cozy</span>
-            <span> Canal</span>
-            <span> Paris dix</span>
+    <>
+      {logement.pictures && <Slider images={logement.pictures} />}
+
+      <section className="Conteneur_Info">
+        <div className="Contteneur_InfoLogement">
+          <p className="Tittle">{logement.title}</p>
+          <p className="Text">{logement.location}</p>
+          <ul className="TagUl">
+            {logement.tags.map((tag) => (
+              <li className="TagLi" key={tag}>
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="Conteneur_InfoOwner">
+          <div className="Flex">
+            <p className="TextOwner">{logement.host.name}</p>
+            <img
+              className="ImgOwner"
+              src={logement.host.picture}
+              alt={logement.host.name}
+            />
           </div>
+
+          <Rating rating={logement.rating} />
         </div>
-        <div className="Apartment__proprio">
-          <div className="Apartment__proprio__txt">
-            <h3>
-              Maxime
-              <br />
-              123456
-            </h3>
-            <div className="Apartment__proprio__stars">
-              <span>☆</span>
-              <span>☆</span>
-              <span>☆</span>
-              <span>☆</span>
-              <span>☆</span>
-            </div>
-          </div>
-          <img
-            className="Apartment__proprio__img"
-            src="banner.png"
-            alt="img proprio"
-          />
-        </div>
-      </div>
-      <div className="Apartment__c ollapsible">
-        <div className="Apartment__descriptionequipements">
-          <Collapsible sections={descriptionequipements} />
-        </div>
-      </div>
-    </div>
+      </section>
+
+      <Collapsible title="Description" content={logement.description} />
+      <Collapsible
+        title="Equipements"
+        content={logement.equipments.map((equipment) => (
+          <p className="TextCollapse" key={equipment}>
+            {equipment}
+          </p>
+        ))}
+      />
+    </>
   );
 }
 

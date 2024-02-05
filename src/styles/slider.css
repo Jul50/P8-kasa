@@ -1,0 +1,37 @@
+.ContSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ImgSlider {
+  width: 100%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.ArrowSliderLeft {
+  position: absolute;
+  cursor: pointer;
+  right: 2%;
+  width: 20px;
+  height: 100px;
+}
+
+.ArrowSliderRight {
+  position: absolute;
+  cursor: pointer;
+  left: 2%;
+  width: 20px;
+  height: 100px;
+}
+
+.CountSlider {
+  position: absolute;
+  bottom: 0%;
+  color: white;
+  font-weight: 700;
+}/*# sourceMappingURL=slider.css.map */

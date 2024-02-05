@@ -1,5 +1,5 @@
 import React from "react";
-import "./BannerApropos.css";
+import "../styles/BannerApropos.css";
 
 function BannerApropos() {
   return (
