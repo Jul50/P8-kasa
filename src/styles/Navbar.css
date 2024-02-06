@@ -10,6 +10,13 @@
   margin-left: 100px;
   margin-right: 100px;
 }
+@media (max-width: 1000px) {
+  .navbar {
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 20px;
+  }
+}
 .navbar a {
   text-decoration: none;
   color: #ff6060;
@@ -21,9 +28,20 @@
   display: inline-block;
   border-bottom: 2px solid transparent;
 }
+@media (max-width: 1000px) {
+  .navbar a span {
+    font-size: 15px;
+  }
+}
 .navbar a:hover span {
   border-color: #ff6060;
 }
-.navbar__logo {
+.navbar .navbar__logo {
   margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
+}
+@media (max-width: 1000px) {
+  .navbar .navbar__logo img {
+    width: 120px; /* Adjust the width to make the logo smaller */
+    height: auto; /* Maintain aspect ratio */
+  }
 }/*# sourceMappingURL=Navbar.css.map */

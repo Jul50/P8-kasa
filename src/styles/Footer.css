@@ -14,4 +14,13 @@
   color: white;
   text-align: center;
   font-size: 24px;
+}
+@media (max-width: 1000px) {
+  .Footer img {
+    width: 122px;
+    height: 40px;
+  }
+  .Footer .Footer__txt {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

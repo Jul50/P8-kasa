@@ -8,6 +8,11 @@
   margin-bottom: 20px;
   margin-left: 100px;
   margin-right: 100px;
+  @media (max-width: 1000px) {
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 20px;
+  }
 
   a {
     text-decoration: none;
@@ -20,6 +25,9 @@
     span {
       display: inline-block;
       border-bottom: 2px solid transparent;
+      @media (max-width: 1000px) {
+        font-size: 15px;
+      }
     }
 
     &:hover span {
@@ -27,7 +35,14 @@
     }
   }
 
-  &__logo {
+  .navbar__logo {
     margin-right: auto; /* Reste toujours à gauche en prenant un maximum de place */
+
+    @media (max-width: 1000px) {
+      img {
+        width: 120px; /* Adjust the width to make the logo smaller */
+        height: auto; /* Maintain aspect ratio */
+      }
+    }
   }
 }

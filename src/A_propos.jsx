@@ -31,7 +31,7 @@ function A_propos() {
   return (
     <div>
       <BannerApropos />
-      <div className="Collapisble-a-propos">
+      <div className="collapsible-a-propos">
         <Collapsible {...sections} />
         <Collapsible {...sections1} />
         <Collapsible {...sections2} />

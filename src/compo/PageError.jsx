@@ -9,7 +9,7 @@ function PageError() {
         Oups! La page que vous demandez n'existe pas
       </p>
       <a className="pageerreur__back" href="/">
-        Retourner sur la page d'accuei
+        Retourner sur la page d'accueil
       </a>
     </div>
   );

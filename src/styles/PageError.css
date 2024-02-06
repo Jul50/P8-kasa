@@ -14,17 +14,30 @@
   margin-top: 100px;
   box-sizing: content-box;
 }
+@media (max-width: 1000px) {
+  .pageerreur__title {
+    font-size: 96px;
+  }
+}
 .pageerreur__txt {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   color: #ff6060;
   font-family: Montserrat;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
+}
+@media (max-width: 1000px) {
+  .pageerreur__txt {
+    font-size: 18px;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+  }
 }
 .pageerreur__back {
   display: flex;
@@ -38,5 +51,12 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 142%;
+}
+@media (max-width: 1000px) {
+  .pageerreur__back {
+    font-size: 14px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=PageError.css.map */
