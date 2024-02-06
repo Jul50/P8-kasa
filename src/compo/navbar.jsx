@@ -6,7 +6,7 @@ import logoKasa from "../asset/logoKasa.jpg";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="./navbar__logo">
+      <div className="navbar__logo">
         <img src={logoKasa} alt="logo Kasa" />
       </div>
       <NavLink to="/">

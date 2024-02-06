@@ -1,8 +1,7 @@
 import React from "react";
-import Navcompo from "./compo/navbar.jsx";
-import Footer from "./compo/Footer.jsx";
 import BannerApropos from "./compo/BannerApropos.jsx";
 import Collapsible from "./compo/Collapsible.jsx";
+import "./styles/A_propos.css";
 
 function A_propos() {
   const sections = {
@@ -32,10 +31,12 @@ function A_propos() {
   return (
     <div>
       <BannerApropos />
-      <Collapsible {...sections} />
-      <Collapsible {...sections1} />
-      <Collapsible {...sections2} />
-      <Collapsible {...sections3} />
+      <div className="Collapisble-a-propos">
+        <Collapsible {...sections} />
+        <Collapsible {...sections1} />
+        <Collapsible {...sections2} />
+        <Collapsible {...sections3} />
+      </div>
     </div>
   );
 }

@@ -43,16 +43,17 @@ function Apartmentpage({ id }) {
           <Rating rating={logement.rating} />
         </div>
       </section>
-
-      <Collapsible title="Description" content={logement.description} />
-      <Collapsible
-        title="Equipements"
-        content={logement.equipments.map((equipment) => (
-          <p className="TextCollapse" key={equipment}>
-            {equipment}
-          </p>
-        ))}
-      />
+      <div className="collapsible__container__wrapper">
+        <Collapsible title="Description" content={logement.description} />
+        <Collapsible
+          title="Equipements"
+          content={logement.equipments.map((equipment) => (
+            <p className="TextCollapse" key={equipment}>
+              {equipment}
+            </p>
+          ))}
+        />
+      </div>
     </>
   );
 }

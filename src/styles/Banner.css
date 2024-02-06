@@ -20,6 +20,11 @@
      object-fit: cover;
   filter: brightness(80%);
 }
+@media (max-width: 1000px) {
+  .banner img {
+    top: 0px;
+  }
+}
 
 h1 {
   position: absolute;

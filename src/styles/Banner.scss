@@ -18,6 +18,9 @@
   top: -222px;
   object-fit: cover;
   filter: brightness(80%);
+  @media (max-width: 1000px) {
+    top: 0px;
+  }
 }
 
 h1 {

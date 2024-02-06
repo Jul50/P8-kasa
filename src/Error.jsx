@@ -6,9 +6,7 @@ import PageError from "./compo/PageError.jsx";
 function Error() {
   return (
     <div>
-      <Navcompo />
       <PageError />
-      <Footer />
     </div>
   );
 }
