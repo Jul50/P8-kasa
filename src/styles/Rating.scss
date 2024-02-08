@@ -1,4 +1,8 @@
 .Stars {
   width: 27px;
   height: 27px;
+  @media (max-width: 1000px) {
+    height: 13px;
+    width: 13px;
+  }
 }

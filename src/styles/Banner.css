@@ -9,6 +9,9 @@
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1000px) {
   .banner {
@@ -21,7 +24,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  top: -222px;
+  top: 0px;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(80%);
@@ -51,12 +54,12 @@ h1 {
   }
 }
 
-.break {
+.Break {
   display: none;
 }
 
 @media (max-width: 1000px) {
-  .break {
+  .Break {
     display: block;
   }
 }/*# sourceMappingURL=Banner.css.map */

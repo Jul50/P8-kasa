@@ -31,7 +31,7 @@ function Apartmentpage({ id }) {
         </div>
 
         <div className="Conteneur_InfoOwner">
-          <div className="Flex">
+          <div className="Flexbox">
             <p className="TextOwner">{logement.host.name}</p>
             <img
               className="ImgOwner"

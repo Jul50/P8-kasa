@@ -2,9 +2,10 @@
   width: calc(100% - 200px);
   margin-left: 100px;
 }
+
 @media (max-width: 1000px) {
   .collapsible-a-propos .collapsible__container {
-    width: calc(100% - 40px);
-    margin-left: 20px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
   }
-} /*# sourceMappingURL=A_propos.css.map */
+}/*# sourceMappingURL=A_propos.css.map */

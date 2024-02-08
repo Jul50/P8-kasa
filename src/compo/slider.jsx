@@ -15,10 +15,10 @@ function Slider({ images }) {
   }
 
   return (
-    <section className="ContSlider">
+    <section className="ContainerSlider">
       {images.length > 1 && (
         <>
-          <p className="CountSlider">
+          <p className="SliderCount">
             {currentIndex + 1} / {images.length}
           </p>
 

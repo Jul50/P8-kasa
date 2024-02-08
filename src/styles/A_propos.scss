@@ -1,8 +1,10 @@
-.Collapisble-a-propos .collapsible__container {
+.collapsible-a-propos .collapsible__container {
   width: calc(100% - 200px);
   margin-left: 100px;
-
-  @media (max-width: 1000px) {
-    width: calc(100% - 20px);
+}
+@media (max-width: 1000px) {
+  .collapsible-a-propos .collapsible__container {
+    width: calc(100% - 30px);
+    margin-left: 15px;
   }
 }
