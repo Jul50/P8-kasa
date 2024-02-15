@@ -54,4 +54,9 @@
   .SliderCount {
     display: none;
   }
+}
+
+.ArrowSliderLeft,
+.ArrowSliderRight {
+  color: white;
 }/*# sourceMappingURL=slider.css.map */

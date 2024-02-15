@@ -1,6 +1,4 @@
 import React from "react";
-
-/* import { createBrowserRouter, RouterProvider } from "react-router-dom"; */
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Apropos from "./A_propos";
 import Error from "./Error";
@@ -19,6 +17,7 @@ function RouterKasa() {
           path="/"
           element={
             <div>
+              {/* faire un composant Home*/}
               <Banner /> <ApartmentGrid />
             </div>
           }
@@ -33,31 +32,3 @@ function RouterKasa() {
 }
 
 export default RouterKasa;
-
-/* router */
-/*const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <Error />,
-  },
-
-  {
-    path: "/A_propos",
-    element: (
-      <div>
-        <Apropos />
-      </div>
-    ),
-  },
-  {
-    path: "/accomodation/:id",
-    element: (
-      <div>
-        <Accomodation />
-      </div>
-    ),
-  },
-]);
-
-*/

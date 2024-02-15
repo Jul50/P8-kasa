@@ -3,12 +3,12 @@ import "../styles/PageError.css";
 
 function PageError() {
   return (
-    <div className="pageerreur">
-      <h2 className="pageerreur__title">404</h2>
-      <p className="pageerreur__txt" Pageerreur__>
+    <div className="PageError">
+      <h2 className="PageError__title">404</h2>
+      <p className="PageError__txt">
         Oups! La page que vous demandez n'existe pas
       </p>
-      <a className="pageerreur__back" href="/">
+      <a className="PageError__back" href="/">
         Retourner sur la page d'accueil
       </a>
     </div>

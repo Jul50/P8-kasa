@@ -1,4 +1,4 @@
-.pageerreur__title {
+.PageError__title {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,11 +15,11 @@
   box-sizing: content-box;
 }
 @media (max-width: 1000px) {
-  .pageerreur__title {
+  .PageError__title {
     font-size: 96px;
   }
 }
-.pageerreur__txt {
+.PageError__txt {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -31,7 +31,7 @@
   line-height: 142.6%;
 }
 @media (max-width: 1000px) {
-  .pageerreur__txt {
+  .PageError__txt {
     font-size: 18px;
     justify-content: center;
     margin-right: 50px;
@@ -39,7 +39,7 @@
     text-align: center;
   }
 }
-.pageerreur__back {
+.PageError__back {
   display: flex;
   align-items: center;
   margin-top: 139px;
@@ -53,7 +53,7 @@
   font-weight: 500;
 }
 @media (max-width: 1000px) {
-  .pageerreur__back {
+  .PageError__back {
     font-size: 14px;
     margin-right: 50px;
     margin-left: 50px;

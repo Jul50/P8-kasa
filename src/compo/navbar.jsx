@@ -10,7 +10,7 @@ function Navbar() {
         <img src={logoKasa} alt="logo Kasa" />
       </div>
       <NavLink to="/">
-        <span>Acceuil</span>
+        <span>Accueil</span>
       </NavLink>
       <NavLink to="/a_propos">
         <span>A propos</span>

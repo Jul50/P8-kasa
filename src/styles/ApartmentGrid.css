@@ -1,4 +1,4 @@
-.home_gallery {
+.HomeGallery {
   border-radius: 25px;
   background-color: #f6f6f6; /* mettre en #f6f6f6 */
   margin-top: 43px;
@@ -16,7 +16,7 @@
   justify-content: space-evenly;
 }
 @media (max-width: 1000px) {
-  .home_gallery {
+  .HomeGallery {
     background-color: white;
     margin-left: 20px;
     margin-right: 20px;

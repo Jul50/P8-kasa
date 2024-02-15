@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/Apartmentpage.css";
 import Error from "../Error";
-import Slider from "../compo/slider";
+import Slider from "./Slider";
 import Collapsible from "./Collapsible";
 import Rating from "../compo/Rating";
 import Data from "../data/data.json";
 
-function Apartmentpage({ id }) {
+function ApartmentPage({ id }) {
   const logement = Data.find((location) => location.id === id);
 
   if (!logement) {
@@ -18,7 +18,7 @@ function Apartmentpage({ id }) {
       {logement.pictures && <Slider images={logement.pictures} />}
 
       <section className="Conteneur_Info">
-        <div className="Contteneur_InfoLogement">
+        <div className="Conteneur_InfoLogement">
           <p className="Tittle">{logement.title}</p>
           <p className="Text">{logement.location}</p>
           <ul className="TagUl">
@@ -58,4 +58,4 @@ function Apartmentpage({ id }) {
   );
 }
 
-export default Apartmentpage;
+export default ApartmentPage;
